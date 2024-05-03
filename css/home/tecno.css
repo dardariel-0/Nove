@@ -1,0 +1,73 @@
+.tecno-bg {
+  background-color: var(--cor-13);
+  box-shadow: inset 0 80px var(--cor-01), inset 0 -80px var(--cor-01);
+}
+.tecno {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.tecno-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tecno-conteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tecno-conteudo > span {
+  margin-bottom: 20px;
+  display: block;
+}
+.tecno-conteudo h2 {
+  margin-bottom: 32px;
+}
+.tecno-conteudo > p {
+  margin-bottom: 20px;
+}
+
+.tecno-conteudo a {
+  margin-bottom: 80px;
+}
+
+.tecno-vantagens {
+  display: flex;
+  gap: 40px;
+}
+.tecno-vantagens h3 {
+  margin-bottom: 12px;
+  width: max-content;
+  /* max-content impede o elemento de quebrar quando o tamanho da tela fica menor q ele, o tamanho minimo dele será ele sem a quebra */
+}
+.tecno-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px) {
+  .tecno-bg {
+    box-shadow: none;
+  }
+  .tecno {
+    grid-template-columns: 1fr;
+  }
+  .tecno-conteudo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .tecno-img {
+    display: none;
+  }
+  .tecno a {
+    margin-bottom: 52px;
+  }
+}
+@media (max-width: 600px) {
+  .tecno-vantagens {
+    flex-direction: column;
+  }
+}

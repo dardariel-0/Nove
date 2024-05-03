@@ -1,0 +1,57 @@
+.introducao-bg {
+  background-color: var(--cor-13);
+  color: var(--cor-01);
+  box-shadow: inset 0 -120px var(--cor-01);
+}
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 40px;
+}
+/* .introducao-img {
+  margin-bottom: -120px;
+  dessa forma funciona a img vazada mas tem que dar mais voltas para resolver
+} */
+.introducao-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.introducao-conteudo {
+  align-self: self-end;
+  padding-bottom: 200px;
+  padding-top: 32px;
+}
+
+.introducao-conteudo h1 {
+  margin-bottom: 32px;
+}
+
+.introducao-conteudo p {
+  margin-bottom: 20px;
+  color: var(--cor-06);
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    display: flex;
+    flex-direction: column;
+  }
+  .introducao-conteudo h1 {
+    margin-bottom: 12px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 32px;
+  }
+  .introducao-img img {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    object-position: left;
+  }
+  .introducao-bg {
+    box-shadow: inset 0 -60px var(--cor-01);
+    background-color: var(--cor-12);
+  }
+}
