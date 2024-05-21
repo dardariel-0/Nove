@@ -1,12 +1,14 @@
 @import "../css/global/global.css";
 @import "../css/utilities/typography.css";
 @import "../css/utilities/colors.css";
+@import "../css/utilities/animation.css";
 
 @import "../css/global/01-header.css";
 @import "../css/global/02-footer.css";
 
 /* utilities */
 @import "../css/utilities/components.css";
+@import "../css/utilities/form.css";
 
 /* home */
 @import "../css/home/introduction.css";
@@ -26,6 +28,13 @@
 @import "../css/seguros/insurance.css";
 @import "../css/seguros/questions.css";
 @import "../css/seguros/benefits.css";
+
+/* orçamento */
+@import "../css/budget/budget.css";
+
+/* contato */
+@import "../css/contact/contact.css";
+@import "../css/contact/stores.css";
 
 /* termos */
 @import "../css/terms/terms.css";

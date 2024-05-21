@@ -5,7 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +16,11 @@
 
   <title>Projeto Final</title>
   <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.">
+
+
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
 </head>
 
 <body>
@@ -33,14 +41,18 @@
       </nav>
     </div>
   </header>
+
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
-        <p class="font-2-l">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="button-1" href="/">escolha a sua</a>
+        <h1 class="font-1-xxl fadeInDown" data-anime="100">Bicicletas feitas sob medida<span class="cor-p1">.</span></h1>
+        <p class="font-2-l fadeInDown" data-anime="300">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="button-1 fadeInDown" data-anime="500" href="bicicletas.html">escolha a sua</a>
       </div>
-      <picture class="introducao-img"><img src="./img/fotos/introducao.jpg" alt="Bicicleta Elétrica Preta"></picture>
+      <picture class="introducao-img fadeInDown" data-anime="700">
+        <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
+        <img src="./img/fotos/introducao.jpg" alt="Bicicleta Elétrica Preta" width="1280" height="1600">
+      </picture>
     </div>
   </main>
   <article class="bicicletas-lista">
@@ -72,12 +84,12 @@
         <a class="link" href="./bicicletas.html">Escolha um Modelo</a>
         <div class="tecno-vantagens">
           <div>
-            <img src="/img/icones/eletrica.svg" alt="">
+            <img src="/img/icones/eletrica.svg" width="24" height="24" alt="">
             <h3 class="font-1-m cor-01">Motor Elétrico</h3>
             <p class="font-2-s cor-05">Toda Bikcraft é equipada com um motor elétrico que possui duração de até 120h. A bateria é recarregada com a sua energia gasta ao pedalar.</p>
           </div>
           <div>
-            <img src="/img/icones/rastreador.svg" alt="">
+            <img src="/img/icones/rastreador.svg" width="24" height="24" alt="">
             <h3 class="font-1-m cor-01">Rastreador</h3>
             <p class="font-2-s cor-05">Sabemos o quão preciosa é a sua Bikcraft, por isso adicionamos rastreadores e sistemas anti-furto para garantir o seu sossego.</p>
           </div>
@@ -85,7 +97,7 @@
 
       </div>
       <picture class="tecno-img">
-        <img src="/img/fotos/tecnologia.jpg" alt="">
+        <img src="/img/fotos/tecnologia.jpg" width="1200" height="1920" alt="">
       </picture>
     </div>
 
@@ -95,19 +107,19 @@
   <section class="parceiros container" aria-label="Nossos Parceiros">
     <h2 class="container font-1-xxl">nossos parceiros<span class="cor-p1">.</span></h2>
     <ul>
-      <li><img src="/img/parceiros/caravan.svg" alt=""></li>
-      <li><img src="/img/parceiros/ranek.svg" alt=""></li>
-      <li><img src="/img/parceiros/handel.svg" alt=""></li>
-      <li><img src="/img/parceiros/dogs.svg" alt=""></li>
-      <li><img src="/img/parceiros/lescone.svg" alt=""></li>
-      <li><img src="/img/parceiros/flexblog.svg" alt=""></li>
-      <li><img src="/img/parceiros/wildbeast.svg" alt=""></li>
-      <li><img src="/img/parceiros/surfbot.svg" alt=""></li>
+      <li><img src="/img/parceiros/caravan.svg" width="140" height="38" alt=""></li>
+      <li><img src="/img/parceiros/ranek.svg" width="149" height="36" alt=""></li>
+      <li><img src="/img/parceiros/handel.svg" width="139" height="50" alt=""></li>
+      <li><img src="/img/parceiros/dogs.svg" width="152" height="39" alt=""></li>
+      <li><img src="/img/parceiros/lescone.svg" width="208" height="41" alt=""></li>
+      <li><img src="/img/parceiros/flexblog.svg" width="165" height="38" alt=""></li>
+      <li><img src="/img/parceiros/wildbeast.svg" width="196" height="34" alt=""></li>
+      <li><img src="/img/parceiros/surfbot.svg" width="200" height="49" alt=""></li>
 
     </ul>
   </section>
   <section class="testimony" aria-label="depoimento">
-    <picture> <img src="/img/fotos/depoimento.jpg" alt="Mulher pedalando uma bicicleta"></picture>
+    <picture> <img src="/img/fotos/depoimento.jpg" width="1560" height="1360" alt="Mulher pedalando uma bicicleta"></picture>
     <div class="testimony-conteudo">
       <blockquote class="font-1-xl cor-p5">
         <p>Pedalar sempre foi minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por esta atividade. Recomendo a todos que amo.</p>
@@ -169,13 +181,13 @@
       </div>
       <div class="footer-redes">
         <a href="/">
-          <img src="./img/redes/instagram.svg" alt="Instagram">
+          <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
         </a>
         <a href="/">
-          <img src="./img/redes/facebook.svg" alt="Facebook">
+          <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
         </a>
         <a href="/">
-          <img src="./img/redes/youtube.svg" alt="Youtube">
+          <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
         </a>
       </div>
       <div class="footer-informacoes">
@@ -192,6 +204,9 @@
       <p class="footer-copy font-2-m cor-05 ">Bikcraft - Alguns direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

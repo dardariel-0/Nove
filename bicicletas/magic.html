@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style.min.css">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,9 @@
 
   <title>Magic Might</title>
   <meta name="description" content="Magic Might">
+  <script>
+    document.documentElement.classList.add("js");
+  </script>
 </head>
 
 <body id="bicicleta">
@@ -49,7 +54,7 @@
       <div class="bicicleta-conteudo">
         <p class="font-2-l cor-05">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
         <div class="bicicleta-comprar">
-          <a class="button-1" href="../orcamento.html">comprar agora</a>
+          <a class="button-1" href="../orcamento.html?tipo=bike&produto=magic">comprar agora</a>
           <div><span class="font-1-xs cor-06"><img src="../img/icones/entrega.svg" alt=""> entrega em 5 dias</span>
             <span class="font-1-xs cor-06"><img src="../img/icones/estoque.svg" alt="">10 em estoque</span>
           </div>
@@ -162,6 +167,7 @@
       <p class="footer-copy font-2-m cor-05 ">Bikcraft - Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
