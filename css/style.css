@@ -16,13 +16,13 @@
 @import "../css/home/partners.css";
 @import "../css/home/testimony.css";
 
-/* bicicletas */
-@import "../css/bicicletas/bicicletas-lista.css";
-@import "../css/bicicletas/bike.css";
+/* fones */
+@import "../css/fones/fones-lista.css";
+@import "../css/fones/fone.css";
 
-/* bicicleta */
-@import "../css/bicicleta/bicicleta.css";
-@import "../css/bicicleta/benefit-bike.css";
+/* fone */
+@import "../css/fone/fone-item.css";
+@import "../css/fone/benefit-fone.css";
 
 /* seguros */
 @import "../css/seguros/insurance.css";

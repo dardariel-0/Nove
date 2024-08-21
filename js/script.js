@@ -47,10 +47,10 @@ function eventoPerguntas(pergunta) {
 
 perguntas.forEach(eventoPerguntas);
 
-// galeria de fotos bikes
+// galeria de fotos fones
 
-const galeria = document.querySelectorAll(".bicicleta-img img ");
-const galeriaContainer = document.querySelector(".bicicleta-img");
+const galeria = document.querySelectorAll(".fone-img img ");
+const galeriaContainer = document.querySelector(".fone-img");
 
 function trocarImagem(event) {
   const img = event.currentTarget;

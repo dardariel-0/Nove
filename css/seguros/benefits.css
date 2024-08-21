@@ -17,6 +17,10 @@
 .benefits img {
   margin-bottom: 8px;
 }
+.benefits img {
+  width: 28px;
+  height: 28px;
+}
 
 @media (max-width: 800px) {
   .benefits ul {

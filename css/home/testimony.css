@@ -1,7 +1,7 @@
 .testimony {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: var(--cor-p1);
+  background-color: var(--cor-p2);
   overflow: hidden;
 }
 .testimony img {
@@ -28,7 +28,7 @@
 .testimony p::before {
   content: "“";
   font-size: 5rem;
-  color: var(--cor-p2);
+  color: var(--cor-p1);
   position: absolute;
   left: -52px;
   top: -20px;
@@ -37,12 +37,12 @@
 .testimony p::after {
   content: "”";
   font-size: 5rem;
-  color: var(--cor-p2);
+  color: var(--cor-p1);
   position: absolute;
 }
 @media (min-width: 1200px) {
   .testimony img {
-    max-height: 520px;
+    max-height: 600px;
   }
 }
 

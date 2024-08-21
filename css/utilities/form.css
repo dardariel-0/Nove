@@ -29,7 +29,7 @@
   outline: none;
   border-color: var(--cor-p1);
   background-color: var(--cor-01);
-  box-shadow: 0 0 0 2px #fea;
+  box-shadow: 0 0 0 2px #d9e1cb;
 }
 @media (max-width: 600px) {
   .form-01 {

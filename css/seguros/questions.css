@@ -5,6 +5,9 @@
 .questions h2 {
   margin-bottom: 60px;
 }
+.questions dt button {
+  color: var(--cor-12);
+}
 .questions dl > div {
   padding: 20px;
   border-radius: 4px;

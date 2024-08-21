@@ -1,5 +1,5 @@
 .tecno-bg {
-  background-color: var(--cor-13);
+  background-color: var(--cor-p2);
   box-shadow: inset 0 80px var(--cor-01), inset 0 -80px var(--cor-01);
 }
 .tecno {
@@ -11,7 +11,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: left;
+  object-position: center;
 }
 
 .tecno-conteudo {

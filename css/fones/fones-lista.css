@@ -1,0 +1,67 @@
+.fones-lista {
+  padding-top: 60px;
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.fones-lista h2 {
+  margin-bottom: 32px;
+  padding: 0;
+}
+.fones-lista ul {
+  display: flex;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: scroll;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+}
+
+.fones-lista li {
+  min-width: 240px;
+}
+.fones-lista a {
+  display: block;
+}
+.fones-lista img {
+  margin-bottom: 12px;
+}
+.fones-lista h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+.fones-lista h3::before {
+  content: "";
+  background-color: var(--cor-p1);
+  height: 8px;
+  width: 12px;
+  display: inline-block;
+  transition: 0.3s;
+}
+.fones-lista a:hover h3::before {
+  width: 24px;
+}
+
+.fones-lista li span {
+  padding-left: 20px;
+}
+
+@media (max-width: 750px) {
+  .fones-lista {
+    padding-top: 28px;
+    padding-bottom: 60px;
+  }
+
+  .fones-lista ul {
+    gap: 20px;
+    max-width: 1800px;
+    scroll-behavior: smooth;
+  }
+
+  .fones-lista li {
+    min-width: 360px;
+  }
+}

@@ -20,6 +20,8 @@
 }
 .parceiros img {
   margin: auto;
+  width: auto;
+  height: auto;
 }
 
 .parceiros li:first-child,
