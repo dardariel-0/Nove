@@ -72,3 +72,7 @@ galeria.forEach(eventosGaleria);
 if (window.SimpleAnime) {
   new SimpleAnime();
 }
+
+let scrollTop = document.documentElement.scrollTop;
+
+console.log(scrollTop);

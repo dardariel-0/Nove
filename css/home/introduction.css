@@ -19,6 +19,10 @@
   object-fit: cover;
 }
 
+.img-intro {
+  border-radius: 200px 4px 4px 4px !important;
+}
+
 .introducao-conteudo {
   align-self: self-end;
   padding-bottom: 200px;

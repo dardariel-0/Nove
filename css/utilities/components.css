@@ -39,11 +39,13 @@
 .secundario:hover {
   background: var(--cor-09);
 }
-.button-1.seta {
+.button-1.seta,
+.button-2.seta {
   display: flex;
   align-items: center;
 }
-.button-1.seta::after {
+.button-1.seta::after,
+.button-2.seta::after {
   content: "";
   display: inline-block;
   width: 18px;
@@ -51,7 +53,12 @@
   margin-left: 12px;
   background-image: url("../../img/icones/seta.svg");
 }
-.button-1.seta:hover::after {
+.button-2.seta::after {
+  background-image: url("../../img/icones/seta-2.svg");
+}
+
+.button-1.seta:hover::after,
+.button-2.seta:hover::after {
   transform: translateX(4px);
   transition: 0.2s;
 }
