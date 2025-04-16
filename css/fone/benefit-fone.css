@@ -1,0 +1,42 @@
+.benefit-fone-bg {
+  background-color: var(--cor-12);
+  box-shadow: inset 0 120px var(--cor-01), inset 0 -120px var(--cor-13);
+}
+.benefit-fone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 0px;
+}
+.benefit-fone-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.benefit-fone-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.benefit-fone h2 {
+  margin-bottom: 32px;
+}
+.benefit-fone p {
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .benefit-fone-bg {
+    background-color: var(--cor-12);
+    box-shadow: inset 0 -80px var(--cor-13);
+  }
+  .benefit-fone {
+    grid-template-columns: 1fr;
+  }
+  .benefit-fone-img {
+    height: 300px;
+  }
+  .benefit-fone-conteudo {
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+}
